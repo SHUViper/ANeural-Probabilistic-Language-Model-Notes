@@ -1,4 +1,4 @@
 # ANeural-Probabilistic-Language-Model-阅读笔记
 这篇论文是神经语言模型的经典奠基工作。作者指出传统 n-gram 模型存在两个关键问题：一是上下文窗口短，二是无法利用词与词之间的相似性。为了解决这一问题，论文提出同时学习词的分布式表示（word embeddings）和基于这些表示的条件概率函数，用神经网络来预测下一个词。这样，即使某个词序列从未在训练集中出现过，只要它由与训练样本中相似的词组成，模型仍然可以分配较高概率。实验在 Brown 和 AP News 两个语料上表明，该方法优于当时最强的 n-gram 基线。这篇论文的重要意义在于：它把语言模型从“离散计数表”推进到了“连续表示 + 神经网络”的时代。
 ## 论文阅读笔记
-- [A Neural Probabilistic Language Model](notes/A_Neural_Probabilistic_Language_Model_阅读笔记.md)
+- [A Neural Probabilistic Language Model](notes/ANPLM_阅读笔记_v2.md)
