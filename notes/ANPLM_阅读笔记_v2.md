@@ -161,8 +161,7 @@ $$
 
 $$
 f(i,w_{t-1},\dots,w_{t-n+1})
-=
-g(i, C(w_{t-1}),\dots,C(w_{t-n+1}))
+=g(i, C(w_{t-1}),\dots,C(w_{t-n+1}))
 $$
 
 ### 含义
@@ -251,9 +250,7 @@ $$
 论文给出的概率形式是：
 
 $$
-\hat P(w_t \mid w_{t-1}, \dots, w_{t-n+1})
-=
-\frac{e^{y_{w_t}}}{\sum_i e^{y_i}}
+\hat P(w_t \mid w_{t-1}, \dots, w_{t-n+1})=\frac{e^{y_{w_t}}}{\sum_i e^{y_i}}
 $$
 
 ### 解释
@@ -276,7 +273,7 @@ $$
 论文最关键的公式之一是：
 
 $$
-y = b + Wx + U\tanh(d + Hx) \tag{1}
+y = b + Wx + U\tanh(d + Hx) 
 $$
 
 这个式子非常重要，必须拆开看。
@@ -606,14 +603,10 @@ $$
 
 $$
 \hat P(w_t \mid w_{t-1}, w_{t-2})
-=
-\alpha_0(q_t)p_0
-+
-\alpha_1(q_t)p_1(w_t)
-+
-\alpha_2(q_t)p_2(w_t \mid w_{t-1})
-+
-\alpha_3(q_t)p_3(w_t \mid w_{t-1}, w_{t-2})
+=\alpha_0(q_t)p_0
++\alpha_1(q_t)p_1(w_t)
++\alpha_2(q_t)p_2(w_t \mid w_{t-1})
++\alpha_3(q_t)p_3(w_t \mid w_{t-1}, w_{t-2})
 $$
 
 这里：
@@ -805,8 +798,7 @@ $$
 
 $$
 E(w_{t-n+1}, \dots, w_t)
-=
-v \cdot \tanh(d + Hx) + \sum_{i=0}^{n-1} b_{w_{t-i}}
+=v \cdot \tanh(d + Hx) + \sum_{i=0}^{n-1} b_{w_{t-i}}
 $$
 
 其中：
@@ -824,8 +816,7 @@ $$
 
 $$
 \hat P(w_t \mid w_{t-1}, \dots, w_{t-n+1})
-=
-\frac{e^{-E(w_{t-n+1}, \dots, w_t)}}
+=\frac{e^{-E(w_{t-n+1}, \dots, w_t)}}
 {\sum_i e^{-E(w_{t-n+1}, \dots, w_{t-1}, i)}}
 $$
 
