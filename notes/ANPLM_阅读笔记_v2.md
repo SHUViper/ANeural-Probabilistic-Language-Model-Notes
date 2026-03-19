@@ -177,7 +177,7 @@ $$
 
 下面这张图是论文最关键的结构图：
 
-![Figure 1](C:\Users\12118\Downloads\images\figure1_architecture.png)
+![Figure 1](images/ANPLM_figure1_v2.png)
 
 ### 图中各部分含义
 
